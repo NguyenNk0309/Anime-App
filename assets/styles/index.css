@@ -3,3 +3,28 @@
     background-color: #0b0c2a;
     scroll-behavior: smooth;
 }
+
+@media only screen and (min-width: 1024px) {
+    body .resolution {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: #0b0c2a;
+    }
+    body .resolution {
+        text-align: center;
+        color: #fff;
+        display: block;
+        padding: 40px;
+    }
+    .root {
+        display: none;
+    }
+}
