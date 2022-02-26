@@ -17,7 +17,7 @@ slider((result) => {
         for (let i = 0; i < 10; i++) {
             html += `<div class="swiper-slide">
                 <a href="#">
-                    <img src="${result.data[i].attributes.posterImage.original}" />
+                    <img src="${result.data[i].attributes.coverImage.original}" />
                     <h1>${result.data[i].attributes.canonicalTitle}</h1>    
                 </a>
             </div>`;
