@@ -1,0 +1,117 @@
+.search-window {
+    position: fixed;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1000;
+    transition: background-color linear 0.3s;
+    overflow: hidden;
+}
+
+.search-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.close-btn {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(30, 17, 83);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.close-btn i {
+    color: #fff;
+    font-size: 40px;
+}
+
+.search-bar {
+    margin-top: 150px;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    color: #fff;
+}
+
+.search-bar i {
+    font-size: 20px;
+    padding: 0 30px;
+    cursor: pointer;
+}
+
+.search-bar i.default {
+    opacity: 0.5;
+}
+
+.search-bar input {
+    background-color: transparent;
+    border: none;
+    width: 470px;
+    font-size: 40px;
+    color: #fff;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-error {
+    margin-top: 40px;
+    color: white;
+    font-size: 28px;
+}
+
+.search-list {
+    overflow-x: scroll;
+    width: 950px;
+    height: 200px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: none;
+}
+
+.search-item {
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+}
+
+.search-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.search-item .search-item-description {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 1);
+    transition: transform ease-in 0.2s, background-color ease-in 0.2s;
+}
+
+.search-item:hover .search-item-description {
+    height: 100%;
+    width: 100%;
+    transform: translateX(0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.search-item-description span {
+    color: white;
+    display: block;
+    padding: 0 5px;
+}

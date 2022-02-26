@@ -1,0 +1,5 @@
+.root {
+    position: relative;
+    background-color: #0b0c2a;
+    scroll-behavior: smooth;
+}

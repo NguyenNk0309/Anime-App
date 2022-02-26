@@ -1,0 +1,56 @@
+.footer {
+    background-color: #000038;
+    margin-top: 50px;
+    border-top: 2px solid #fff;
+}
+
+.footer-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-body .stt-btn {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #070720;
+    position: relative;
+    transform: translateY(-50%) rotateZ(45deg);
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer-body .stt-btn i {
+    transform: rotateZ(-45deg);
+}
+
+.footer-content {
+    color: white;
+    padding: 10px 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content a {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    width: 80%;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.footer-content a i {
+    margin-right: 6px;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+        <link rel="icon" href="./assets/img/NK-icon.png" />
+        <link rel="stylesheet" href="./assets/icon/css/all.min.css" />
+        <link rel="stylesheet" href="./assets/styles/grid.css" />
+        <link rel="stylesheet" href="./assets/styles/header.css" />
+        <link rel="stylesheet" href="./assets/styles/slider.css" />
+        <link rel="stylesheet" href="./assets/styles/content.css" />
+        <link rel="stylesheet" href="./assets/styles/scrollbar.css" />
+        <link rel="stylesheet" href="./assets/styles/search.css" />
+        <link rel="stylesheet" href="./assets/styles/footer.css" />
+        <link rel="stylesheet" href="./assets/styles/loading.css" />
+        <link rel="stylesheet" href="./assets/styles/index.css" />
+        <title>Anime</title>
+    </head>
+    <body>
+        <div class="root">
+            <div class="header">
+                <div class="header-content grid wide">
+                    <div class="header__logo">
+                        <a href="./index.html">
+                            <img src="./assets/img/logo.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="header__navigation">
+                        <ul class="header__navigation-list">
+                            <li class="header__navigation-item active">
+                                <a href="./index.html"> Homepage </a>
+                            </li>
+                            <li class="header__navigation-item">
+                                <a href="#">
+                                    Categories
+                                    <span>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </span>
+                                </a>
+                                <ul class="header__navigation-sub">
+                                    <li class="header__navigation-sub-item">Categories</li>
+                                    <li class="header__navigation-sub-item">Anime Details</li>
+                                    <li class="header__navigation-sub-item">Anime Watching</li>
+                                    <li class="header__navigation-sub-item">Blog Details</li>
+                                    <li class="header__navigation-sub-item">Sign up</li>
+                                    <li class="header__navigation-sub-item">Login</li>
+                                </ul>
+                            </li>
+                            <li class="header__navigation-item">
+                                <a href="#">Our Blog</a>
+                            </li>
+                            <li class="header__navigation-item">
+                                <a href="#">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__search">
+                        <div class="search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body grid wide">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="content">
+                    <div class="row">
+                        <div class="col l-8 m-6">
+                            <div class="content-main">
+                                <div class="content-main-header">
+                                    <h1 class="content-main-heading">Anime 2022</h1>
+                                    <div class="content-main-pagination">
+                                        <div class="icon prev default">
+                                            <i class="fa-solid fa-angle-left"></i>
+                                        </div>
+                                        <div class="icon next">
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row"></div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6">
+                            <div class="content-secondary">
+                                <div class="content-secondary-header">
+                                    <div class="row">
+                                        <div class="col l-9">
+                                            <input type="text" placeholder="Category: Adventure" />
+                                        </div>
+                                        <div class="col l-3">
+                                            <button>Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="content-secondary-list"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-body grid wide">
+                    <div class="stt-btn">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                    <div class="footer-content">
+                        <h1>Contact Me:</h1>
+                        <a href="https://www.facebook.com/profile.php?id=100006214334713">
+                            <i class="fa-brands fa-facebook"></i>
+                            <h4>Facebook</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="loading-screen">
+                <div class="loader">Loading...</div>
+            </div>
+            <div class="search-window">
+                <div class="search-content">
+                    <div class="close-btn">
+                        <i class="fa-solid fa-x"></i>
+                    </div>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search Here" />
+                        <i class="fa-solid fa-magnifying-glass default"></i>
+                    </div>
+                    <span class="search-error"></span>
+                    <div class="search-list">
+                        <div class="row"></div>
+                    </div>
+                </div>
+            </div>
+            <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+            <script>
+                var swiper = new Swiper('.mySwiper', {
+                    observer: true,
+                    observeParents: true,
+                    cssMode: true,
+                    centeredSlides: true,
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                });
+            </script>
+            <script src="./assets/scripts/slider.js"></script>
+            <script type="module" src="./assets/scripts/mainContent.js"></script>
+            <script src="./assets/scripts/search.js"></script>
+            <script src="./assets/scripts/secondaryContent.js"></script>
+            <script type="module" src="./assets/scripts/pagination.js"></script>
+            <script src="./assets/scripts/loading.js"></script>
+            <script src="./assets/scripts/footer.js"></script>
+            <script src="./assets/scripts/index.js"></script>
+        </div>
+    </body>
+</html>
