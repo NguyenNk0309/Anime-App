@@ -125,7 +125,7 @@
 .content-secondary .content-secondary-header button {
     height: 100%;
     font-size: 16px;
-    background-color: rgb(0, 0, 107);
+    background-color: rgb(0, 0, 83);
     color: white;
     border-radius: 8px;
     border: none;
@@ -133,6 +133,7 @@
     width: 100%;
     padding: 10px;
     cursor: pointer;
+    text-align: center;
 }
 
 .content-secondary .content-secondary-header input:focus {
